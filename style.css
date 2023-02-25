@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+body 
+{ 
+    background:lavenderblush;
+    color: cornflowerblue;
+}
+nav
+{ 
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a
+{
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+} 
+  .copyright i
+{
+  color: beige; 
+}
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: lavenderblush;
+    font-weight: 300;
+    margin-top: 20px;
+    color: blanchedalmond;
+}
+#aboutmain 
+{
+ padding: 70px 0 90px 70px;
+ color: black;
+ margin-bottom: 20px;
+}
+.aboutsection
+{
+    padding: 10px 10%;
+}
+.aboutrow
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.aboutcol1
+{
+    flex-basis: 20%;
+    margin-right: 80px;
+    margin-left: -50px;
+    margin-top: 5%;
+}
+.aboutcol1 img
+{
+    border-radius: 15px;
+}
+.col2
+{
+    flex-basis: 75%;
+}
+.sub-title
+{
+  font-size: 50px;
+  font-weight: 600;
+  color: blanchedalmond;
+}
+.tab-titles
+{
+  display: flex;
+  margin: 200px 0 40px;  
+}
+.tab-links
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: chocolate;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after
+{
+    width: 50%;
+}
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span
+{
+    color: black;
+    font-size: 14px;
+}
+.tab-contents
+{
+    display: none;
+}
+.tab-contents.active-tab
+{
+    display: block;
+}
+
+/* -------------------------portfolio---------------------------*/
+#portfolio-main
+{
+    padding: 10px 0;
+}
+.portfolio-section
+{
+    padding: 10px 0;
+}
+.portfolio-title
+{
+    font-size: 50px;
+    font-weight: 600;
+    color: blueviolet;
+}
+.portfolio-work-list
+{
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+ grid: gap 40px;
+ margin-top: 50px;
+ margin-bottom: 90px;
+}
+.portfolio
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio img
+{
+    width: 25%;
+    border-radius: 10px;
+    display: block;
+    transition:transform 0.5s
+}
+.layer
+{
+    width: 100%;
+    height:0;
+    background: linear-gradient(red);
+    border-radius: 10px;
+    position:absolute;
+    left:0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3
+{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+.layer p
+{
+  color: brown;
+}
+.layer a
+{
+    margin-top: 60px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: cadetblue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.portfolio:hover img
+{
+  transform: scale(1.11);  
+}
+.portfolio:hover .layer
+{
+    height: 100%;
+}
+/*------------Contact me------------------------------*/
+.contact-row
+{
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-left: 150px;
+}
+.contact-left
+{
+    margin-top: 50px;
+    flex-basis: 25%;
+}
+.contact-sub-title
+{
+    font-size: 50px;
+    font-weight: 600;
+    color: aqua;
+}
+.contact-left p
+{
+    margin-top: 30px;
+}
+.contact-left p i
+{
+    color: blanchedalmond;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons
+{
+    margin-top: 30px;
+}
+.social-icons a
+{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: blue;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover
+{
+    color: black;
+    transform:translateY(-50px);
+}
+
+
+
+
+
+.social-icons a
+{
+    text-decoration: none;
+    font-size: 30px;
+
+}
